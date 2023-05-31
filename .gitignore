@@ -15,3 +15,4 @@ composer.lock
 /public/karma-unit.js
 /public/templates-app.js
 /public/templates-common.js
+storage/framework/cache
