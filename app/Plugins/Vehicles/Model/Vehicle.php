@@ -187,7 +187,7 @@ class Vehicle extends Model
     public function scopeFilterActiveVehicle($query, Request $request)
     {
         $query->where('is_active', 1);
-        $query->where('is_paid', 1);
+        $query->where('is_paid', 0);
     }
 
     /**

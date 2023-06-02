@@ -158,7 +158,12 @@ class VehiclesController extends Controller
             }
         }
         $enabled_includes = array('vehicle_type', 'fuel_type', 'counter_location', 'vehicle_company', 'vehicle_make', 'vehicle_model', 'attachments', 'user');
-        $vehicles = Vehicle::with($enabled_includes)->filterByRequest($request)->filterActiveVehicle($request)->paginate(config('constants.ConstPageLimit'));
+        $vehicles = Vehicle::query()
+            ->with($enabled_includes)
+            ->filterByRequest($request)
+            ->filterActiveVehicle($request)
+            ->paginate(config('constants.ConstPageLimit'));
+//        dd($vehicles);
         if($request->has('start_date') && $request->has('end_date')) {
             $vehicles = $this->vehicleService->getDiscountRate($vehicles, $request->start_date, $request->end_date);
             $request_data = $request->only('start_date', 'end_date', 'pickup_location_id', 'drop_location_id', 'price_min', 'price_max', 'sort', 'sortby', 'mileage_min', 'mileage_max', 'seat_min', 'seat_max', 'vehicle_type', 'is_manual_transmission', 'fuel_type', 'ac', 'non_ac', 'auto_transmission', 'airbag', 'non_airbag');

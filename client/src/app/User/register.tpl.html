@@ -39,10 +39,10 @@
                         <span class="error" ng-show="model.confirmPasswordErr">{{model.confirmPasswordErr}}</span>
                     </div>
                 </div>
-                <div class="form-group" ng-class="{ 'has-error' : model.captchaErr}">
-                    <div class="g-recaptcha" vc-recaptcha key="model.captcha_site_key" on-create="setRecaptchaId(widgetId)" on-success="model.captchaErr=''"></div>
-                    <div class="error" ng-show="model.captchaErr">{{model.captchaErr}}</div>
-                </div>        
+<!--                <div class="form-group" ng-class="{ 'has-error' : model.captchaErr}">-->
+<!--                    <div class="g-recaptcha" vc-recaptcha key="model.captcha_site_key" on-create="setRecaptchaId(widgetId)" on-success="model.captchaErr=''"></div>-->
+<!--                    <div class="error" ng-show="model.captchaErr">{{model.captchaErr}}</div>-->
+<!--                </div>        -->
                 <div class="row login-btn" ng-class="{ 'has-error' : (signupForm.$submitted || signupForm.termCondition.$touched) && (signupForm.termCondition.$pristine || signupForm.termCondition.$invalid)}">
                     <div class="col-md-6">
                         <label class="checkbox custom-checkbox" for="checkbox1">

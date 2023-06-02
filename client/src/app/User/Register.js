@@ -52,12 +52,12 @@
          **/
         model.signup = function (isvalid) {
             model.captchaErr = '';
-            var response = vcRecaptchaService.getResponse($scope.widgetId);
-            if(response.length === 0){
-                model.captchaErr = $filter("translate")("Please resolve the captcha and submit");
-            }else{
-                model.captchaErr = '';
-            }
+            // var response = vcRecaptchaService.getResponse($scope.widgetId);
+            // if(response.length === 0){
+            //     model.captchaErr = $filter("translate")("Please resolve the captcha and submit");
+            // }else{
+            //     model.captchaErr = '';
+            // }
             if (isvalid && model.password == model.confirm_password) {
                 var credentials = {
                     username: model.username,
@@ -65,7 +65,7 @@
                     password: model.password,
                     confirm_password: model.confirm_password,
                     is_agree_terms_conditions: model.terms_conditions,
-                    'g-recaptcha-response': response
+                    // 'g-recaptcha-response': response
                 };
                 /**
                  * @ngdoc service

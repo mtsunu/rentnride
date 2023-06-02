@@ -133,10 +133,10 @@ class UsersController extends Controller
                 $user_data['is_active'] = 0;
             }
             //Captcha verification
-            $captcha = $request['g-recaptcha-response'];
-            if ($this->UserService->captchaCheck($captcha) == false) {
-                throw new \Dingo\Api\Exception\StoreResourceFailedException('Captcha Verification failed.');
-            }
+//            $captcha = $request['g-recaptcha-response'];
+//            if ($this->UserService->captchaCheck($captcha) == false) {
+//                throw new \Dingo\Api\Exception\StoreResourceFailedException('Captcha Verification failed.');
+//            }
             $user = User::create($user_data);
             if ($user) {
                 return $this->UserService->emailConditions($user, 'register');
@@ -166,6 +166,10 @@ class UsersController extends Controller
         if(empty($chk_user)) {
             return response()->json(['error' => 'Account does not exist.'], 404);
         }
+
+        $chk_user->password = Hash::make($credentials['password']);
+        $chk_user->save();
+
         try {
             if (!$userToken = JWTAuth::attempt($credentials)) {
                 return $this->response->errorUnauthorized();

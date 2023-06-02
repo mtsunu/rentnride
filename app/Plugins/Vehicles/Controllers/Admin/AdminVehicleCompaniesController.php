@@ -78,8 +78,10 @@ class AdminVehicleCompaniesController extends Controller
      */
     public function store(Request $request)
     {
-        $vehicle_company_data = $request->only('user_id','name', 'address', 'latitude', 'longitude', 'phone', 'fax', 'mobile', 'email', 'is_active');
+        $vehicle_company_data = $request->only('user_id','name', 'full_address', 'latitude', 'longitude', 'phone', 'fax', 'mobile', 'email', 'is_active');
         $vehicle_company_data['slug'] = EasySlug::generateUniqueSlug($request->name, 'vehicle_companies');
+        $vehicle_company_data['address'] = $vehicle_company_data['full_address'];
+        unset($vehicle_company_data['full_address']);
         $validator = Validator::make($vehicle_company_data, VehicleCompany::GetValidationRule(), VehicleCompany::GetValidationMessage());
         if ($validator->passes()) {
             try {
