@@ -1,8 +1,8 @@
 <div class="vehicle-drive">
 	<div class="container">
-    	<h1>{{'TYPE BASED CAR LISTING'|translate}}!</h1>
+    	<h1 class="text-center">{{'OUR SCOOTER'|translate}}!</h1>
         <div class="list-tab">
-            <ul class="nav nav-tabs" ng-if="vehicleTypes.length > 0">
+            <ul class="nav nav-tabs hidden" ng-if="vehicleTypes.length > 0">
                 <li role="presentation" ng-class="{'active':type.id == vehicleTypes.status_id}" ng-repeat="type in vehicleTypes" ng-click="getVehicles(type.id)">
                     <a href="javascript:void(0);">{{type.name}}</a>
                 </li>
@@ -11,7 +11,7 @@
                 <uib-carousel active="active" interval="false" class="home" no-wrap="noWrapSlides">
                     <uib-slide ng-repeat="vehicle in vehicles track by $index"  index="$index">
                     	<div class="row">
-                            <div class="col-sm-6 col-md-4" ng-repeat="list in vehicle">
+                            <div class="col-sm-6 col-md-4" ng-repeat="list in vehicle" style="float: none; margin: 0 auto;">
                                 <div class="thumbnail clearfix">
                                 	<div class="thumb-img">
                                         <a href="#/vehicle/{{list.id}}/{{list.slug}}" title="{{list.name}}">
@@ -63,8 +63,8 @@
                     	</div>
                     </uib-slide>
                 </uib-carousel>
-                <div class="text-center vehicle-btn">
-                    <a ui-sref="all_vehicles" class="btn" title="{{'List of Vehicles'|translate}}">{{'List of Vehicles'|translate}}</a>
+                <div class="text-center vehicle-btn hidden">
+                    <a ui-sref="all_vehicles" class="btn" title="{{'List of Scooters'|translate}}">{{'List of Vehicles'|translate}}</a>
               	</div>
 			</div>
         </div>

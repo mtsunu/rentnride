@@ -100,7 +100,7 @@ angular.module("Common/footer.tpl.html", []).run(["$templateCache", function ($t
     "                                </a>\n" +
     "                            </li>\n" +
     "                        </ul>\n" +
-    "                        <div class=\"clearfix\" ng-show=\"$root.settings['user.is_allow_user_to_switch_language'] == 1\">\n" +
+    "                        <div class=\"clearfix hidden\" ng-show=\"$root.settings['user.is_allow_user_to_switch_language'] == 1\">\n" +
     "                            <div ng-translate-language-select></div>\n" +
     "                        </div>\n" +
     "                    </div>\n" +
@@ -239,7 +239,7 @@ angular.module("Common/header.tpl.html", []).run(["$templateCache", function ($t
     "                <span class=\"icon-bar\"></span>\n" +
     "                <span class=\"icon-bar\"></span>\n" +
     "            </button>\n" +
-    "            <a class=\"navbar-brand\" href=\"#\"><img ng-src=\"assets/img/logo.png\" alt=\"[Image: {{'BookorRent'| translate}}]\" title=\"{{'BookorRent'| translate}}\"></a>\n" +
+    "            <a class=\"navbar-brand\" style=\"margin-top: 20px;\" href=\"#\"><img ng-src=\"assets/img/logo.png\" alt=\"[Image: {{'BookorRent'| translate}}]\" title=\"{{'BookorRent'| translate}}\"></a>\n" +
     "        </div>\n" +
     "        <div class=\"collapse navbar-collapse\" id=\"navbar-ex-collapse\">\n" +
     "            <ul class=\"nav navbar-nav left-menu\"> \n" +
@@ -348,8 +348,7 @@ angular.module("Common/header.tpl.html", []).run(["$templateCache", function ($t
     "            </ul>\n" +
     "        </div>\n" +
     "    </div>\n" +
-    "</div>\n" +
-    "");
+    "</div>");
 }]);
 
 angular.module("Common/how_it_works.tpl.html", []).run(["$templateCache", function ($templateCache) {

@@ -161,11 +161,12 @@ body {
 }
 
 .btn-green {
-	background-color:@btn-green-hover;
+	//background-color:@btn-green-hover;
+	background-color:#EA580C;
 	font:(@font-size + 4px) (@ProximaNova-Bold);
 	color:@white;
 	&:before {
-		background-color:@btn-green;
+		background-color:#F97316;
 	}
 	&:hover, &:focus, &:active {
 		color:@white;
@@ -372,8 +373,9 @@ body {
 		&.active a, &.active a:hover, &.active a:focus, &.active a:active {
 			background-color:@black-38;
 			border-color:@black-38;
-			color:@white;
-			
+			//color:@white;
+			color: white;
+
 		}
 	}
 	.pagination-prev a, .pagination-next a {
@@ -395,8 +397,10 @@ body {
 /* Header Block
 =====================*/
 .header {
-	background-color:@white;
-	border-bottom:1px solid #dbdbdb;
+	//background-color:@white;
+	background-color: black;
+	//border-bottom:1px solid #dbdbdb;
+	border-bottom:1px solid #44403C;
 	.navbar {
 		min-height:84px;
 		margin-bottom:@margin - 15px;
@@ -446,7 +450,8 @@ body {
 				}
 				> a {
 					font:(@font-size) (@ProximaNova-Regular);
-					color:@grey-6c;
+					//color:@grey-6c;
+					color: white;
 					border:1px solid @grey-c4;
 					border-radius:@border-radius + 26px;
 					padding:(@padding - 7px) (@padding);
@@ -570,13 +575,15 @@ body {
 	padding:(@padding + 85px) (@padding - 15px) (@padding + 25px);
 	h1 {
 		font:(@font-size + 34px) (@PlayfairDisplay-Regular);
-		color:@white;
+		//color:@white;
+		color: #FAFAF9;
 		letter-spacing:-1.5px;
 	}
 	form {
 		max-width:1030px;
 		margin:(@margin + 57px) auto (@margin - 15px);
-		background-color:@white;
+		//background-color:@white;
+		background-color: black;
 		border-radius:@border-radius + 6px;
 		padding:(@padding + 15px) (@padding + 33px);
 		.icon-marker {
@@ -611,14 +618,15 @@ body {
 			label {
 				margin:(@margin - 5px) (@margin - 15px) (@margin - 15px);
 				font:(@font-size) (@ProximaNova-Regular);
-				color:@black-38;
+				//color:@black;
+				color:#FAFAF9;
 				cursor:pointer;
 			}
 		}
 		label {
 			font:(@font-size + 2px) (@ProximaNova-Bold);
 			margin:(@margin - 8px) (@margin - 15px) (@margin - 6px);
-			color:@black;
+			color:#FAFAF9;
 		} 
 		.form-control {
 			height:50px;
@@ -636,7 +644,8 @@ body {
 			width:190px;
 			float:left;
 			.btn {
-				box-shadow:0 4px 0 @btn-dark-green;
+				//box-shadow:0 4px 0 @btn-dark-green;
+				box-shadow:0 4px 0 #C2410C;
 				margin-top:@margin + 20px;
 				min-height:46px;
 				text-transform:uppercase;
@@ -724,18 +733,22 @@ body {
 /* Quote Block
 =====================*/
 .section-quote {
-	background-color:@grey-ed;
+	//background-color:@grey-ed;
+	background-color:#171717;
 	padding:(@padding + 52px) (@padding - 15px) (@padding + 14px);
 	p {
 		.paragraph;
+		color: #FFFFFF;
 		margin-bottom:@margin + 24px;
 	}
 	.btn{
 		min-width:205px;
 		min-height:50px;
 		font:(@font-size + 4px) (@ProximaNova-Bold);
-		color:@black-71;
-		background-color:@white;
+		//color:@black-71;
+		color:#FFFFFF;
+		//background-color:@white;
+		background-color: black;
 		border:1px solid @grey-c4;
 		border-radius:@border-radius + 26px;
 		transition:0.3s linear;
@@ -747,6 +760,9 @@ body {
 			background-color:@orange;
 			border-color:@orange;
 			color:@white;
+		}
+		&.btn-orange-w:before {
+			background-color: black;
 		}
 	}
 	li.active {
@@ -768,23 +784,28 @@ body {
 /* How it works Block
 ============================*/
 .how-it-works {
+	background-color: black;
 	padding:(@padding + 30px) (@padding - 15px) (@padding + 38px);
 	h1 {
 		font:(@font-size + 28px) (@PlayfairDisplay-Regular);
-		color:@black-1a;
+		//color:@black-1a;
+		color:white;
 		margin-bottom:@margin;
 	}
 	p {
 		.paragraph;
+		color: white;
 	}
 	h3 {
 		font:(@font-size + 8px) (@ProximaNova-Bold);
-		color:@black-38;
+		//color:@black-38;
+		color:white;
 		margin:(@margin + 22px) (@margin - 15px) (@margin + 5px);
 	}
 	ul {
 		li {
 			.list-font;
+			color: white;
 			line-height:@line-height - 10px;
 			padding:@padding - 8px;
 			position:relative;
@@ -858,8 +879,10 @@ body {
 /* Vehicle Drive
 =============================*/
 .vehicle-drive {
+	background-color: #171717;
 	padding:(@padding + 43px) (@padding - 15px) (@padding + 35px);
-	color:@black-1a;
+	//color:@black-1a;
+	color:white;
 	h1 {
 		font:(@font-size + 14px) (@ProximaNova-Bold);
 	}
@@ -1165,8 +1188,10 @@ body {
 /* Footer
 ======================*/
 .footer {
-	background-color:@black-38;
-	color:@white;
+	//background-color:@black-38;
+	background-color: black;
+	//color:@white;
+	color: white;
 	padding:(@padding + 12px) (@padding - 15px) (@padding + 25px);
 	h3 {
 		font:(@font-size + 4px) (@ProximaNova-Bold);
@@ -1177,7 +1202,8 @@ body {
 			margin:(@margin - 5px) (@margin - 15px);
 			a {
 				font:(@font-size + 2px) (@ProximaNova-Light);
-				color:@white;
+				//color:@white;
+				color: white;
 				text-decoration:none;
 				transition:0.3s linear;
 				&:hover, &:focus, &:active {
@@ -1205,7 +1231,8 @@ body {
 				text-align:center;
 				line-height:@line-height + 18px;
 				transition:0.3s linear;
-				color:@white;
+				//color:@white;
+				color: white;
 				&:hover, &:focus, &:active {
 					border-color:@orange;
 					color:@orange;
@@ -1223,7 +1250,8 @@ body {
 		position:relative;
 		.form-control {
 			height:45px;
-			background-color:@black-54;
+			//background-color:@black-54;
+			background-color: white;
 			border-color:@black-54;
 			font-size:@font-size + 2px;
 			color:@white;
@@ -1513,6 +1541,7 @@ body {
 & .transaction-block .transactions {
 	.page-head {
 		.remove-page-head-color;
+		background-color: black;
 		padding:(@padding + 23px) (@padding - 15px) (@padding - 15px);
 		& + .container {
 			padding:@padding - 15px;
@@ -1727,8 +1756,10 @@ body {
 /* Form Block
 ======================*/
 .page-head {
-	background-color:@grey-ed;
-	color:@black;
+	//background-color:@grey-ed;
+	background-color:black;
+	//color:@black;
+	color: white;
 	padding:(@padding + 29px) (@padding - 15px);
 	h2 { 
 		font:(@font-size + 14px) (@ProximaNova-Bold); 
@@ -1748,6 +1779,12 @@ body {
 		label {
 			padding:(@padding - 3px) (@padding - 3px) (@padding - 15px) (@padding - 15px);
 			font-weight:@font-weight + 100;
+		}
+
+		.dropdown {
+			.btn {
+				color: white;
+			}
 		}
 	}
 	&.money-head {
@@ -2081,7 +2118,8 @@ body {
 				border-radius:0;
 				border-bottom:0;
 				.panel-heading {
-					background-color:@white;
+					//background-color:@white;
+					background-color: white;
 					padding:@padding;
 					h4 {
 						margin:(@margin - 11px) (@margin - 15px) (@margin - 15px);
@@ -3430,4 +3468,9 @@ html:not([lang='en']) {
 			padding:(@padding - 3px) (@padding - 15px);
 		}
 	}
+}
+
+
+.btn-default {
+	background-color: transparent;
 }

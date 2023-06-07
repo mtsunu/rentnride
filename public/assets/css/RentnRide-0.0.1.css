@@ -7101,12 +7101,12 @@ body {
   font: 12px ProximaNova-Regular;
 }
 .btn-green {
-  background-color: #47b580;
+  background-color: #EA580C;
   font: 18px ProximaNova-Bold;
   color: #ffffff;
 }
 .btn-green:before {
-  background-color: #4fc98e;
+  background-color: #F97316;
 }
 .btn-green:hover,
 .btn-green:focus,
@@ -7304,7 +7304,7 @@ body {
 .pagination li.active a:active {
   background-color: #383838;
   border-color: #383838;
-  color: #ffffff;
+  color: white;
 }
 .pagination .pagination-prev a,
 .pagination .pagination-next a {
@@ -7333,8 +7333,8 @@ body {
 /* Header Block
 =====================*/
 .header {
-  background-color: #ffffff;
-  border-bottom: 1px solid #dbdbdb;
+  background-color: black;
+  border-bottom: 1px solid #44403C;
 }
 .header .navbar {
   min-height: 84px;
@@ -7360,7 +7360,7 @@ body {
 }
 .header .left-menu li a {
   font: 16px ProximaNova-Semibold;
-  color: #1c1c1c;
+  color: #FAFAF9;
   padding: 8px 15px;
   margin-right: 19px;
 }
@@ -7378,13 +7378,13 @@ body {
   color: #ffffff;
 }
 .header .left-menu + ul > li.book-dropdown .dropdown-toggle .fa {
-  color: #000000;
+  color: #1C1917;
   font-weight: 600;
   margin-left: 10px;
 }
 .header .left-menu + ul > li > a {
   font: 14px ProximaNova-Regular;
-  color: #6c6c6c;
+  color: white;
   border: 1px solid #c4c4c4;
   border-radius: 30px;
   padding: 8px 15px;
@@ -7471,7 +7471,7 @@ body {
 .header .left-menu + ul currency-conversion > a .fa {
   margin-left: 10px;
   font-weight: 600;
-  color: #000000;
+  color: #1C1917;
 }
 .header .left-menu + ul currency-conversion > a:hover,
 .header .left-menu + ul currency-conversion > a:focus,
@@ -7512,13 +7512,13 @@ body {
 }
 .banner h1 {
   font: 48px PlayfairDisplay-Regular;
-  color: #ffffff;
+  color: #FAFAF9;
   letter-spacing: -1.5px;
 }
 .banner form {
   max-width: 1030px;
   margin: 72px auto 0px;
-  background-color: #ffffff;
+  background-color: black;
   border-radius: 10px;
   padding: 30px 48px;
 }
@@ -7549,13 +7549,13 @@ body {
 .banner form .diff-loc label {
   margin: 10px 0px 0px;
   font: 14px ProximaNova-Regular;
-  color: #383838;
+  color: #FAFAF9;
   cursor: pointer;
 }
 .banner form label {
   font: 16px ProximaNova-Bold;
   margin: 7px 0px 9px;
-  color: #000000;
+  color: #FAFAF9;
 }
 .banner form .form-control {
   height: 50px;
@@ -7572,7 +7572,7 @@ body {
   float: left;
 }
 .banner form .form-btn .btn {
-  box-shadow: 0 4px 0 #3ba170;
+  box-shadow: 0 4px 0 #C2410C;
   margin-top: 35px;
   min-height: 46px;
   text-transform: uppercase;
@@ -7660,21 +7660,22 @@ body {
 /* Quote Block
 =====================*/
 .section-quote {
-  background-color: #ededed;
+  background-color: #171717;
   padding: 67px 0px 29px;
 }
 .section-quote p {
   font: 18px ProximaNova-Light;
   line-height: 32px;
-  color: #000000;
+  color: #1C1917;
+  color: #FFFFFF;
   margin-bottom: 39px;
 }
 .section-quote .btn {
   min-width: 205px;
   min-height: 50px;
   font: 18px ProximaNova-Bold;
-  color: #716761;
-  background-color: #ffffff;
+  color: #FFFFFF;
+  background-color: black;
   border: 1px solid #c4c4c4;
   border-radius: 30px;
   transition: 0.3s linear;
@@ -7689,6 +7690,9 @@ body {
   background-color: #ff721c;
   border-color: #ff721c;
   color: #ffffff;
+}
+.section-quote .btn.btn-orange-w:before {
+  background-color: black;
 }
 .section-quote li.active .btn {
   background-color: #ffffff;
@@ -7707,26 +7711,29 @@ body {
 /* How it works Block
 ============================*/
 .how-it-works {
+  background-color: black;
   padding: 45px 0px 53px;
 }
 .how-it-works h1 {
   font: 42px PlayfairDisplay-Regular;
-  color: #1a1a1a;
+  color: white;
   margin-bottom: 15px;
 }
 .how-it-works p {
   font: 18px ProximaNova-Light;
   line-height: 32px;
-  color: #000000;
+  color: #1C1917;
+  color: white;
 }
 .how-it-works h3 {
   font: 22px ProximaNova-Bold;
-  color: #383838;
+  color: white;
   margin: 37px 0px 20px;
 }
 .how-it-works ul li {
   font: 16px ProximaNova-Light;
   color: #383838;
+  color: white;
   line-height: 20px;
   padding: 7px;
   position: relative;
@@ -7768,7 +7775,7 @@ body {
 .befefits-bookorrent p {
   font: 18px ProximaNova-Light;
   line-height: 32px;
-  color: #000000;
+  color: #1C1917;
 }
 .befefits-bookorrent h3 {
   font: 20px ProximaNova-Bold;
@@ -7797,8 +7804,9 @@ body {
 /* Vehicle Drive
 =============================*/
 .vehicle-drive {
+  background-color: #171717;
   padding: 58px 0px 50px;
-  color: #1a1a1a;
+  color: white;
 }
 .vehicle-drive h1 {
   font: 28px ProximaNova-Bold;
@@ -7901,7 +7909,7 @@ body {
 }
 .vehicle-drive .thumbnail .caption ul h4 {
   font: 14px ProximaNova-Regular;
-  color: #000000;
+  color: #1C1917;
   margin: 0px;
 }
 .vehicle-drive .thumbnail .caption ul p {
@@ -8006,7 +8014,7 @@ body {
 }
 .login-bg .user-login h2 {
   font: 22px ProximaNova-Semibold;
-  color: #1c1c1c;
+  color: #FAFAF9;
 }
 .login-bg .user-login form {
   border-bottom: 1px solid #dfdfdf;
@@ -8153,8 +8161,8 @@ body {
 /* Footer
 ======================*/
 .footer {
-  background-color: #383838;
-  color: #ffffff;
+  background-color: black;
+  color: white;
   padding: 27px 0px 40px;
 }
 .footer h3 {
@@ -8168,7 +8176,7 @@ body {
 }
 .footer ul.list-unstyled li a {
   font: 16px ProximaNova-Light;
-  color: #ffffff;
+  color: white;
   text-decoration: none;
   transition: 0.3s linear;
 }
@@ -8194,7 +8202,7 @@ body {
   text-align: center;
   line-height: 48px;
   transition: 0.3s linear;
-  color: #ffffff;
+  color: white;
 }
 .footer .social-icons li a:hover,
 .footer .social-icons li a:focus,
@@ -8213,7 +8221,7 @@ body {
 }
 .footer .lang-select .form-control {
   height: 45px;
-  background-color: #545454;
+  background-color: white;
   border-color: #545454;
   font-size: 16px;
   color: #ffffff;
@@ -8314,7 +8322,7 @@ body {
   font: 14px ProximaNova-Regular;
   line-height: 18px;
   background-color: #ffffff;
-  color: #000000;
+  color: #1C1917;
   padding: 11px 20px;
   border-radius: 26px;
 }
@@ -8529,7 +8537,7 @@ body {
 }
 .vehicle-dashboard h4 a {
   font: 20px ProximaNova-Bold;
-  color: #000000;
+  color: #1C1917;
 }
 .vehicle-dashboard .rating .fa {
   cursor: pointer;
@@ -8601,6 +8609,7 @@ body {
 .transaction-block .transactions .page-head {
   background: none;
   padding-bottom: 40px;
+  background-color: black;
   padding: 38px 0px 0px;
 }
 .transaction-block .transactions .page-head .profile-settings {
@@ -8619,7 +8628,7 @@ body {
 }
 .transactions h2 + p {
   font: 14px ProximaNova-Light;
-  color: #000000;
+  color: #1C1917;
 }
 .transactions .transaction-tab ul.nav li a {
   padding: 5px 15px;
@@ -8695,7 +8704,7 @@ body {
 .table tbody > tr > td {
   font: 14px ProximaNova-Light;
   line-height: 20px;
-  color: #000000;
+  color: #1C1917;
   padding: 12px;
   border-top: 0;
   border-bottom: 1px solid #dddddd;
@@ -8752,7 +8761,7 @@ body {
   font: 18px ProximaNova-Regular;
 }
 .user-feedback .media h3 a {
-  color: #000000;
+  color: #1C1917;
 }
 .user-feedback .media h3 span {
   font: 16px ProximaNova-Light;
@@ -8791,8 +8800,8 @@ body {
 /* Form Block
 ======================*/
 .page-head {
-  background-color: #ededed;
-  color: #000000;
+  background-color: black;
+  color: white;
   padding: 44px 0px;
 }
 .page-head h2 {
@@ -8814,7 +8823,7 @@ body {
   font: 14px ProximaNova-Regular;
   line-height: 18px;
   background-color: #ffffff;
-  color: #000000;
+  color: #1C1917;
   padding: 11px 20px;
   border-radius: 26px;
 }
@@ -8849,6 +8858,9 @@ body {
   padding: 12px 12px 0px 0px;
   font-weight: 500;
 }
+.page-head .profile-settings .dropdown .btn {
+  color: white;
+}
 .page-head.money-head .btn-green-d {
   font: 14px ProximaNova-Regular;
   border-radius: 26px;
@@ -8879,7 +8891,7 @@ body {
 }
 .change-head .dropdown-toggle {
   border: 1px solid #ff721c;
-  color: #000000;
+  color: #1C1917;
   border-radius: 30px;
   margin-top: 20px;
   padding: 6px 20px;
@@ -8917,7 +8929,7 @@ body {
   font: 14px ProximaNova-Regular;
   line-height: 33px;
   transition: all 0.3s linear;
-  color: #1c1c1c;
+  color: #FAFAF9;
   display: inline-block;
   text-decoration: none;
 }
@@ -8932,7 +8944,7 @@ body {
 }
 .form-block form h4 {
   font: 18px ProximaNova-Semibold;
-  color: #000000;
+  color: #1C1917;
   margin: 0px 0px 17px;
 }
 .form-block form .social-info {
@@ -9184,7 +9196,7 @@ body {
   color: #ff721c;
 }
 .vehicle-list .filter-menus .panel-group .panel .panel-heading {
-  background-color: #ffffff;
+  background-color: white;
   padding: 15px;
 }
 .vehicle-list .filter-menus .panel-group .panel .panel-heading h4 {
@@ -9253,7 +9265,7 @@ body {
 }
 .vehicle-details h4 a span {
   font: 18px ProximaNova-Bold;
-  color: #000000;
+  color: #1C1917;
 }
 .vehicle-details .location {
   transition: 0.3s linear;
@@ -9356,7 +9368,7 @@ body {
 }
 .vehicle-details .rental-location h3 {
   font: 18px ProximaNova-Bold;
-  color: #000000;
+  color: #1C1917;
   margin-top: 5px;
   margin-left: -15px;
 }
@@ -9633,7 +9645,7 @@ body {
   padding: 15px 0px;
   margin: 0px 45px -2px 0px;
   border-radius: 0;
-  color: #000000;
+  color: #1C1917;
   cursor: pointer;
   transition: 0.3s linear;
   border-bottom: 4px solid transparent;
@@ -9655,12 +9667,12 @@ body {
 }
 .vehicle-view .vehicle-view-tab h3 {
   font: 18px ProximaNova-Bold;
-  color: #000000;
+  color: #1C1917;
 }
 .vehicle-view .vehicle-view-tab h3 + p {
   font: 16px ProximaNova-Light;
   line-height: 25px;
-  color: #000000;
+  color: #1C1917;
   margin-top: 20px;
 }
 .vehicle-view .vehicle-view-tab .tab-content {
@@ -9672,7 +9684,7 @@ body {
 .vehicle-view .vehicle-view-tab .counterLocation ul li {
   font: 16px ProximaNova-Light;
   line-height: 25px;
-  color: #000000;
+  color: #1C1917;
   padding-left: 25px;
   padding-bottom: 15px;
   position: relative;
@@ -10006,7 +10018,7 @@ body {
 }
 .add-wallet .wallet-amount .control-label {
   font-size: 16px;
-  color: #000000;
+  color: #1C1917;
   padding-top: 11px;
 }
 .add-wallet .wallet-amount .form-control {
@@ -10020,7 +10032,7 @@ body {
   font: 14px ProximaNova-Light;
 }
 .add-wallet .wallet-amount ul li:first-child {
-  border-right: 1px solid #000000;
+  border-right: 1px solid #1C1917;
   padding-right: 15px;
   margin-right: 10px;
 }
@@ -10317,7 +10329,7 @@ body {
 }
 .user-view-details .media .media-body h3 a {
   font: 20px ProximaNova-Bold;
-  color: #000000;
+  color: #1C1917;
 }
 .user-view-details .media .media-body p {
   font: 16px ProximaNova-Light;
@@ -10333,17 +10345,17 @@ body {
   border: 1px solid #dddddd;
   border-radius: 4px;
   display: block;
-  color: #000000;
+  color: #1C1917;
   padding: 6px 8px;
 }
 .user-view-details ul li a.globe {
-  color: #000000;
+  color: #1C1917;
 }
 .user-view-details ul li a.globe:hover,
 .user-view-details ul li a.globe:focus,
 .user-view-details ul li a.globe:active {
-  background-color: #000000;
-  border-color: #000000;
+  background-color: #1C1917;
+  border-color: #1C1917;
   color: #ffffff;
 }
 .user-view-details ul li a.facebook {
@@ -10421,7 +10433,7 @@ body {
 .calendar-block .calendar-header h2 {
   display: inline-block;
   margin: 0px;
-  color: #000000;
+  color: #1C1917;
 }
 .calendar-block .cal-month-day {
   text-align: center;
@@ -10442,7 +10454,7 @@ body {
 }
 .calendar-block .calendar-body .cal-row-head .pointer {
   margin-right: 0px;
-  color: #000000;
+  color: #1C1917;
 }
 .calendar-block .calendar-body .cal-row-head .cal-day-today {
   background-color: #1ab394;
@@ -10508,7 +10520,7 @@ body {
 #cal-week-box span {
   width: auto;
   height: auto;
-  color: #000000;
+  color: #1C1917;
   border-radius: 4px;
   background: none;
 }
@@ -10533,6 +10545,9 @@ html:not([lang='en']) .message .message-sidebar ul li a {
   font-size: 15px;
   letter-spacing: -0.4px;
   padding: 12px 0px;
+}
+.btn-default {
+  background-color: transparent;
 }
 /**
 *    CSS for @BookorRent

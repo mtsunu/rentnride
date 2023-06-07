@@ -3,7 +3,7 @@
         <h1 class="text-center">{{'Car Hire'|translate}} &amp; {{'Rental Booking Script for...'|translate}}</h1>
         <form role="form" class="clearfix" name="SearchForm" ng-submit="SearchSubmit(SearchForm.$valid)" novalidate>
             <div class="pull-right diff-loc">
-                <label class="checkbox custom-checkbox" for="checkbox1">
+                <label class="checkbox custom-checkbox hidden" for="checkbox1">
                     <input class="hide" id="checkbox1" type="checkbox" ng-model="check_drop_location" ng-change="returnLocation(check_drop_location)" name="check_drop_location">
                     <span></span>
                     {{'Return car to different location'| translate}}
